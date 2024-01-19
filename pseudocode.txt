@@ -1,0 +1,52 @@
+// Event listener for when the DOM is fully loaded
+addEventListener("DOMContentLoaded", function () {
+  
+  // Data for the home page carousel section
+  const homePageCurouselSectionData = {
+    // ... (data details)
+  };
+
+  // Initialize the Splide carousel
+  var splide = new Splide(".splide", {
+    width: 600,
+    height: "auto",
+    pagination: false,
+  });
+
+  // Select relevant DOM elements
+  const curouselDetailsSection = document.querySelector(".curousel-product-details-section");
+  const firstFoldWebsiteHomePageEl = document.querySelector(".first-fold-website-home-page");
+  const productname = document.querySelector(".product-name");
+  const caption = document.querySelector(".caption");
+  const highlightedCaptionText = document.querySelector(".highlighted-caption-text");
+  const description = document.querySelector(".description");
+  const price = document.querySelector(".price");
+  const splideListEl = document.querySelector(".splide__list");
+
+  // Set initial background and content for the first slide
+  firstFoldWebsiteHomePageEl.style.background = homePageCurouselSectionData.homePageCurousalDataList[0].backgroundGradient;
+  productname.innerText = homePageCurouselSectionData.homePageCurousalDataList[0].heading;
+  caption.innerText = homePageCurouselSectionData.homePageCurousalDataList[0].caption;
+  highlightedCaptionText.innerText = homePageCurouselSectionData.homePageCurousalDataList[0].highlightedTextInCaption;
+  description.innerText = homePageCurouselSectionData.homePageCurousalDataList[0].description;
+  price.innerText = homePageCurouselSectionData.homePageCurousalDataList[0].price;
+
+  // Function to create and append carousel images
+  function createAndAppendCurouselImage() {
+    homePageCurouselSectionData.homePageCurousalDataList.forEach((eachObj) => {
+      // ... (create and append carousel images)
+    });
+  }
+
+  // Call the function to create and append carousel images
+  createAndAppendCurouselImage();
+
+  // Event listener for the "move" event in the Splide carousel
+  splide.on("move", function (index) {
+    // Update background and content based on the current slide index
+    // ... (update background and content based on the current slide index)
+  });
+
+  // Mount the Splide carousel
+  splide.mount();
+});

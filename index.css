@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.first-fold-website-home-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
+  .curousel-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.home-page-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+  margin: 25px 0;
+}
+.header-logo-container {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page-king-company-logo {
+  width: 80%;
+  height: auto;
+}
+.header-nav-links-and-sign-out-button-container {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+}
+
+.nav-link-text {
+  color: #1c1415;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sign-up-button {
+  height: 20px;
+  width: 60px;
+  color: #ffffff;
+  background-color: #1c1415;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 10px;
+}
+.home-page-watches-curousel-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.curousel-product-details-section {
+  width: 300px;
+}
+.product-name-and-caption-container {
+  margin-bottom: 20px;
+}
+.product-name {
+  color: #fff;
+  font-family: "Sofia Sans";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 137%;
+  letter-spacing: -0.76px;
+}
+.caption-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.caption {
+  color: #fff;
+
+  font-family: "Sofia Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 115.5%;
+  letter-spacing: -0.52px;
+}
+.highlighted-caption-text {
+  color: #1c1415;
+  font-family: "Sofia Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 115.5%;
+  letter-spacing: -0.52px;
+}
+.description {
+  color: rgba(28, 20, 21, 0.8);
+  font-family: "Poppins";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 190%; /* 45.6px */
+  margin-bottom: 8px;
+}
+.price {
+  color: #fff;
+
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137%; /* 95.9px */
+  letter-spacing: -0.7px;
+}
+.contact-us-section {
+  width: 100px;
+  height: 60px;
+}
+.splide {
+  width: 100%;
+}
+.slide-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 749px) {
+  .home-page-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    width: 80%;
+  }
+  .header-logo-container {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page-king-company-logo {
+    width: 80%;
+    height: auto;
+  }
+  .header-nav-links-and-sign-out-button-container {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .nav-link-text {
+    color: #1c1415;
+    font-family: "Poppins";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .sign-up-button {
+    height: 80px;
+    width: 180px;
+    color: #ffffff;
+    background-color: #1c1415;
+    font-family: "Poppins";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 40px;
+  }
+  .home-page-watches-curousel-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+  }
+  .curousel-product-details-section {
+    width: 900px;
+  }
+  .product-name-and-caption-container {
+    margin-bottom: 100px;
+  }
+  .product-name {
+    color: #fff;
+    font-family: "Sofia Sans";
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 137%;
+    letter-spacing: -0.76px;
+  }
+  .caption-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .caption {
+    color: #fff;
+    font-family: "Sofia Sans";
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 115.5%; /* 60.06px */
+    letter-spacing: -0.52px;
+  }
+  .highlighted-caption-text {
+    color: #1c1415;
+    font-family: "Sofia Sans";
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 115.5%;
+    letter-spacing: -0.52px;
+  }
+  .description {
+    color: rgba(28, 20, 21, 0.8);
+    font-family: "Poppins";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 190%; /* 45.6px */
+    margin-bottom: 48px;
+  }
+  .price {
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137%;
+    letter-spacing: -0.7px;
+    margin-bottom: 20px;
+  }
+  .contact-us-section {
+    width: 300px;
+    height: 100px;
+  }
+
+  .slide-image {
+    width: 100%;
+  }
+}
